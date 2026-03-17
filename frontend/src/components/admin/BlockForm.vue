@@ -70,12 +70,12 @@
               <input
                 v-model="form.questions[qi].hi"
                 class="field-input"
-                :placeholder="`प्रश्न ${qi + 1} (हिन्दी)`"
+                :placeholder="`प्रश्न ${Number(qi) + 1} (हिन्दी)`"
               />
               <input
                 v-model="form.questions[qi].en"
                 class="field-input text-xs"
-                :placeholder="`Question ${qi + 1} (English, optional)`"
+                :placeholder="`Question ${Number(qi) + 1} (English, optional)`"
               />
             </div>
             <button @click="form.questions.splice(qi, 1)" class="text-red-400 hover:text-red-600 px-1 self-start mt-1">✕</button>
